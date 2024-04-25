@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día de la madre</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+    </style>
+</head>
+<body>
+    <div id='container'>
+        <h1>Feliz día mamá! <span class="heart">&hearts;</span></h1>
+        <div id='flower'>
+            <img id="im" align='middle' src='/assets/img/uT2EtCe.png'/>
+        </div>
+    </div>
+    <div id="hideaway">Querida mamá,</br>
+        <p>En este día tan especial, quiero expresarte mi profundo agradecimiento por ser la luz que ilumina cada paso de mi camino. Tu amor incondicional ha sido mi refugio en los momentos difíciles y mi mayor alegría en los momentos felices. Tu sabiduría y tu bondad son un faro que guía mis decisiones y me inspira a ser mejor cada día.
+
+            Hoy, en tu día, quiero recordarte lo especial que eres para mí y cuánto valoro todo lo que haces. Tu sacrificio, tu dedicación y tu ternura son el corazón de nuestro hogar, y no hay palabras suficientes para expresar lo agradecido que estoy por tenerte como mi mamá.
+            
+            Que este día esté lleno de amor, sonrisas y momentos que atesoremos para siempre. Te amo más de lo que las palabras pueden expresar, y siempre estaré agradecido por el regalo incomparable de tenerte como mi mamá.
+            
+            ¡Feliz Día de la Madre!
+            
+            Con todo mi amor y gratitud,</br>
+            <p class = "cedarville-cursive-regular">Martín</p>
+        <!-- <img id='sign' src='/assets/img/60dee73b77f93d61f565416c-1.jpg'> -->
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/JS/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#im').click(function(){
+                $("#hideaway").slideDown();
+            });
+            $(document).click(function(event) {
+                if (!$(event.target).closest('#im').length && !$(event.target).closest('#hideaway').length) {
+                    $("#hideaway").slideUp();
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

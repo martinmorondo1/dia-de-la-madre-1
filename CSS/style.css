@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300);
+
+body{
+  background:#f805b3;
+  color:white;
+  font-family: cursi;
+  font-weight:100;
+  
+}
+/* Estilo para el texto "Feliz día mamá!" */
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    position: relative; /* Asegura que el corazón se posicione correctamente */
+    z-index: 1; /* Coloca el texto por encima del corazón */
+    transition: 0.5s;
+}
+
+/* Efecto de sombra al hacer hover */
+h1:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombras suaves */
+    transform: scale(1.1);
+}
+
+
+img{
+  width:250px;
+  margin:auto;
+  transition: all 0.2s;
+  display:block;
+}
+#flower{
+  width:250px;
+  margin:auto;
+}
+#flower:hover{
+  opacity:0.15;
+  cursor:pointer;
+  transition: all 1s;
+
+}
+#hint{
+  text-align:center;
+  padding:25px;
+  margin:auto;
+}
+#container{
+  margin-top:auto;
+  margin-bottom:auto;
+}
+#hideaway{
+  display:none;
+  width:700px;
+  margin:auto;
+  text-align:left;
+  transition: all 1s;
+}
+a{
+  color:white;
+}
+a:link {
+  text-decoration:none;
+  color:whie;
+}
+#hide{
+  text-align:center;
+  border: solid 1px black;
+  border-color:white;
+  border-radius: 5px;
+  border-width:2px;
+}
+#sign{
+  float:left;
+  width:200px;
+  padding:20px;
+  display:inline-block;
+}
+
+.cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+  }
+
+  
