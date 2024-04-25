@@ -24,7 +24,6 @@ h1:hover {
     transform: scale(1.1);
 }
 
-
 img{
   width:250px;
   margin:auto;
@@ -56,6 +55,25 @@ img{
   margin:auto;
   text-align:left;
   transition: all 1s;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea horizontalmente en el centro */
+    justify-content: center; /* Alinea verticalmente en el centro */
+}
+
+  img {
+    width: 200px;
+    }
+    
+    #hideaway {
+        display:none;
+        margin-top: 50px;
+    }
 }
 a{
   color:white;
